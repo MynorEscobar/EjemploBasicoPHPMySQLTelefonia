@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script src="jquery-3.5.1.min.js"></script>
+
     <script src="js/funcionesClientes.js"></script>
 
     <!-- Bootstrap CSS -->
@@ -49,6 +51,7 @@
                     </div>
 
                     <button type="submit" class="btn btn-primary" name="btnguardar" id="btnguardar">Guardar</button>
+                    <button type="submit" class="btn btn-secondary" name="btnactualizar" id="btnactualizar">Actualizar</button>
                 </form>
             </div>
             <div class="col">
@@ -98,6 +101,11 @@
                 //alert("click");
                 e.preventDefault();
                 agregar_datos();
+            });
+            $("#btnactualizar").on('click', function(e){
+                alert("click en boton actualizar");
+                e.preventDefault();
+                modificar_datos();
             });
         });
     </script>
